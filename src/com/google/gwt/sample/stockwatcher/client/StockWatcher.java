@@ -72,6 +72,7 @@ private VerticalPanel mainPanel = new VerticalPanel();  private FlexTable stocks
     newSymbolTextBox.setFocus(true);
     
  // Setup timer to refresh list automatically.
+    // making a new commit
     Timer refreshTimer = new Timer() {
       @Override
       public void run() {
