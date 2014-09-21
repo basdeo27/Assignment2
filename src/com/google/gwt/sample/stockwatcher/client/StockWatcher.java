@@ -72,7 +72,6 @@ private VerticalPanel mainPanel = new VerticalPanel();  private FlexTable stocks
     newSymbolTextBox.setFocus(true);
     
  // Setup timer to refresh list automatically.
-    // making a new commit
     Timer refreshTimer = new Timer() {
       @Override
       public void run() {
@@ -113,6 +112,8 @@ protected void addStock() {
       return;
  
     }
+    newSymbolTextBox.setText("");
+    newSymbolTextBox.setText("ABC");
     newSymbolTextBox.setText("");
     
  // Don't add the stock if it's already in the table.
